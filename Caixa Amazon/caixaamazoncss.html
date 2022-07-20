@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Animated Amazon Box Design</title>
+	<link rel="stylesheet" type="text/css" href="caixaamazoncss.css">
+</head>
+
+<body>
+	<div id="box">
+		<div class="top"></div>
+		<div>
+		<span></span>
+		<span>
+			<i class="tape"></i>
+		</span>
+		<span></span>
+		<span>
+			<i class="tape"></i>
+		</span> 
+	</div>
+</div>
+
+	<script>
+		let box = document.getElementById('box');
+		window.onmousemove = function(e){
+			box.style.transform = "rotateX(-30deg) rotateY("+ e.clientX +"deg)"
+		}
+
+	</script>
+
+</body>
+</html>
